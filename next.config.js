@@ -34,6 +34,19 @@ module.exports = withStoreConfig({
       },
     ],
   },
+  async headers() {
+    return [
+      {
+        source: "/(.*)",
+        headers: [
+          {
+            key: "Content-Security-Policy",
+            value: "script-src 'self';",
+          },
+        ],
+      },
+    ]
+  },
 })
 
 console.log("next.config.js", JSON.stringify(module.exports, null, 2))
