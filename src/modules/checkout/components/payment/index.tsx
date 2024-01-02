@@ -195,6 +195,8 @@ const Payment = () => {
                 !cart.payment_session?.provider_id ||
                 (cart.payment_session?.provider_id === "stripe" &&
                   !cardFormComplete)
+
+                // !cart.payment_session?.provider_id || cart.payment_session?.provider_id === "stripe"
               }
               isLoading={settingPaymentSession}
             >

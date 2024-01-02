@@ -1,3 +1,4 @@
+"use client"
 import { ErrorMessage } from "@hookform/error-message"
 import {
   CardCvcElement,
@@ -246,3 +247,21 @@ const CardCVC = ({
 }
 
 export default PaymentStripe
+
+// import { PaymentElement } from "@stripe/react-stripe-js"
+// import { StripePaymentElementOptions } from "@stripe/stripe-js"
+// import React from "react"
+
+// const PaymentStripe = () => {
+//   const paymentElementOptions: StripePaymentElementOptions = {
+//     layout: "accordion",
+//   }
+
+//   return (
+//     <div className="relative w-full">
+//       <PaymentElement id="payment-element" options={paymentElementOptions} />
+//     </div>
+//   )
+// }
+
+// export default PaymentStripe
