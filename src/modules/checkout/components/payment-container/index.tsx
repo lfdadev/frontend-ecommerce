@@ -62,9 +62,9 @@ const PaymentContainer: React.FC<PaymentContainerProps> = ({
             {paymentInfoMap[paymentSession.provider_id]?.icon}
           </span>
         </div>
-        {paymentSession.provider_id === "manual" && isDevelopment && (
+        {/* {paymentSession.provider_id === "manual" && isDevelopment && (
           <PaymentTest className="small:hidden text-[10px]" />
-        )}
+        )} */}
       </RadioGroup.Option>
     </>
   )
