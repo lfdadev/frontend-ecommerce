@@ -16,21 +16,11 @@ const FooterCTA = () => {
     }
 
     axios
-      .post(
-        "https://server.lafuerzadelalma.com/mailchimp/subscribe",
-        {
-          email,
-        },
-        {
-          withCredentials: true, // Si estás enviando cookies, asegúrate de incluirlas
-          headers: {
-            "Content-Type": "application/json",
-            "Access-Control-Allow-Origin": "https://www.lafuerzadelalma.com",
-          },
-        }
-      )
+      .post("https://server.lafuerzadelalma.com/mailchimp/subscribe", {
+        email,
+      })
       .then((e) => {
-        toast.success("¡Suscrito con éxito!")
+        toast.success("¡Subscrito correctamente!")
         setEmail("")
       })
       .catch((e) => {
