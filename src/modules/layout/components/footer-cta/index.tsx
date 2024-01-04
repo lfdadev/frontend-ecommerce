@@ -5,27 +5,65 @@ import Button from "@modules/common/components/button"
 import axios from "axios"
 import { useState } from "react"
 import toast from "react-hot-toast"
+import { Dialog, Transition } from "@headlessui/react"
+import Spinner from "@modules/common/icons/spinner"
 
 const FooterCTA = () => {
   const [email, setEmail] = useState("")
+  const [isLoading, setIsLoading] = useState(false)
+  const [message, setMessage] = useState<Message | null>(null)
 
-  function subscribe(e: any) {
+  interface Message {
+    type: string
+    description: string
+  }
+
+  const subscribe = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     if (!email) {
+      setMessage({
+        type: "error",
+        description: "Email cannot be empty!",
+      })
       return
     }
+    setIsLoading(true)
 
-    axios
-      .post("https://server.lafuerzadelalma.com/mailchimp/subscribe", {
-        email,
+    fetch("http://localhost:9000/mailchimp/subscribe", {
+      mode: "no-cors",
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ email }),
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(response.statusText)
+        }
+        return response.text()
       })
-      .then((e) => {
-        toast.success("¡Subscrito correctamente!")
+      .then((text) => {
+        if (text === "OK") {
+          setMessage({
+            type: "success",
+            description: "Subscribed successfully!",
+          })
+          setEmail("")
+        } else {
+          throw new Error("Unexpected response from server")
+        }
         setEmail("")
       })
       .catch((e) => {
         console.error(e)
-        toast.error("Ha ocurrido un error")
+        setMessage({
+          type: "error",
+          description: "An error occurred",
+        })
+      })
+      .finally(() => {
+        setIsLoading(false)
       })
   }
 
@@ -60,6 +98,38 @@ const FooterCTA = () => {
             Suscribirse
           </Button>
         </form>
+
+        {isLoading && (
+          <Transition show={isLoading}>
+            <Dialog
+              onClose={() => setIsLoading(false)}
+              className="relative z-[100]"
+            >
+              <Transition.Child
+                enter="ease-out duration-500"
+                enterFrom="opacity-0"
+                enterTo="opacity-100"
+                leave="ease-in duration-500"
+                leaveFrom="opacity-100"
+                leaveTo="opacity-0"
+              >
+                <div className="fixed inset-0 bg-white bg-opacity-50 flex items-center justify-center">
+                  <Spinner size={24} />
+                </div>
+              </Transition.Child>
+            </Dialog>
+          </Transition>
+        )}
+
+        {message && (
+          <div
+            className={`mt-2 text-sm font-medium ${
+              message.type === "success" ? "text-green-600" : "text-red-600"
+            }`}
+          >
+            {message.description}
+          </div>
+        )}
       </div>
 
       <div className="w-full flex h-[550px]">
