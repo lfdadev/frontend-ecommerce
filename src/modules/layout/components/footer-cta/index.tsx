@@ -29,7 +29,7 @@ const FooterCTA = () => {
     }
     setIsLoading(true)
 
-    fetch("http://localhost:9000/mailchimp/subscribe", {
+    fetch(`${process.env.NEXT_PUBLIC_MEDUSA_BACKEND_URL}/mailchimp/subscribe`, {
       mode: "no-cors",
       method: "POST",
       headers: {
