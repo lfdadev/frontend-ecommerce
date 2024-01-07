@@ -254,7 +254,7 @@ export default PaymentStripe
 
 // const PaymentStripe = () => {
 //   const paymentElementOptions: StripePaymentElementOptions = {
-//     layout: "accordion",
+//     layout: "tabs",
 //   }
 
 //   return (

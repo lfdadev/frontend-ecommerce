@@ -29,7 +29,7 @@ const FooterCTA = () => {
       }
       setIsLoading(true)
 
-      fetch(`http://localhost:9000/mailchimp/subscribe`, {
+      fetch(`https://server.lafuerzadelalma/mailchimp/subscribe`, {
         mode: "no-cors",
         method: "POST",
         headers: {

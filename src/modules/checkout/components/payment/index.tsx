@@ -11,8 +11,8 @@ import { CreditCard, CheckCircleSolid } from "@medusajs/icons"
 import Spinner from "@modules/common/icons/spinner"
 import Ideal from "@modules/common/icons/ideal"
 import Bancontact from "@modules/common/icons/bancontact"
-import { useElements } from "@stripe/react-stripe-js"
 import { useState } from "react"
+
 
 /* Map of payment provider_id to their title and icon. Add in any payment providers you want to use. */
 export const paymentInfoMap: Record<
@@ -180,9 +180,9 @@ const Payment = () => {
             {cart.payment_session?.provider_id === "stripe" && (
               <div className="pt-8">
                 <PaymentStripe
-                useFormState={useFormState}
-                setState={setCardFormState}
-                state={cardFormState}
+                  useFormState={useFormState}
+                  setState={setCardFormState}
+                  state={cardFormState}
                 />
               </div>
             )}
@@ -195,9 +195,6 @@ const Payment = () => {
                 !cart.payment_session?.provider_id ||
                 (cart.payment_session?.provider_id === "stripe" &&
                   !cardFormComplete)
-
-                // !cart.payment_session?.provider_id ||
-                // cart.payment_session?.provider_id === "stripe"
               }
               isLoading={settingPaymentSession}
             >
