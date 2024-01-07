@@ -180,9 +180,9 @@ const Payment = () => {
             {cart.payment_session?.provider_id === "stripe" && (
               <div className="pt-8">
                 <PaymentStripe
-                // useFormState={useFormState}
-                // setState={setCardFormState}
-                // state={cardFormState}
+                useFormState={useFormState}
+                setState={setCardFormState}
+                state={cardFormState}
                 />
               </div>
             )}
@@ -192,12 +192,12 @@ const Payment = () => {
               size="large"
               className="mt-6"
               disabled={
-                // !cart.payment_session?.provider_id ||
-                // (cart.payment_session?.provider_id === "stripe" &&
-                //   !cardFormComplete)
-
                 !cart.payment_session?.provider_id ||
-                cart.payment_session?.provider_id === "stripe"
+                (cart.payment_session?.provider_id === "stripe" &&
+                  !cardFormComplete)
+
+                // !cart.payment_session?.provider_id ||
+                // cart.payment_session?.provider_id === "stripe"
               }
               isLoading={settingPaymentSession}
             >
