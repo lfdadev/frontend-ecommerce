@@ -21,9 +21,12 @@ const FooterCTA = () => {
     setIsLoading(true)
 
     axios
-      .post("https://server.lafuerzadelalma.com/mailchimp/subscribe", {
-        email,
-      })
+      .post(
+        `${process.env.NEXT_PUBLIC_MEDUSA_BACKEND_URL}/mailchimp/subscribe`,
+        {
+          email,
+        }
+      )
       .then((e) => {
         toast.success("¡Te has suscrito correctamente!")
         setEmail("")
