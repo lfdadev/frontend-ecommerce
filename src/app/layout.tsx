@@ -1,6 +1,7 @@
 import Providers from "@modules/providers"
 import "styles/globals.css"
 import { Montserrat } from 'next/font/google'
+import { Toaster } from "react-hot-toast"
 
 const montserrat = Montserrat({ subsets: ['latin'] })
 
@@ -14,6 +15,7 @@ export default function RootLayout({
       <body>
         <Providers>
           <main className={`${montserrat.className} relative`}>{children}</main>
+          <Toaster />
         </Providers>
       </body>
     </html>

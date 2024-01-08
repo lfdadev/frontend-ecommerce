@@ -38,6 +38,7 @@
     "axios": "^1.6.4",
     "clsx": "^1.1.1",
     "framer-motion": "^10.16.16",
+    "isomorphic-unfetch": "^4.0.2",
     "lodash": "^4.17.21",
     "medusa-react": "^9.0.0",
     "next": "^14.0.0",
