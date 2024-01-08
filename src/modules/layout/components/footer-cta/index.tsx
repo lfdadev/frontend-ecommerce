@@ -21,7 +21,7 @@ const FooterCTA = () => {
     setIsLoading(true)
 
     axios
-      .post("http://localhost:9000/mailchimp/subscribe", {
+      .post("https://server.lafuerzadelalma.com/mailchimp/subscribe", {
         email,
       })
       .then((e) => {
@@ -68,7 +68,6 @@ const FooterCTA = () => {
             {isLoading ? <Spinner size={24} /> : "Suscribirse"}
           </Button>
         </form>
-
       </div>
 
       <div className="w-full flex h-[450px]">
