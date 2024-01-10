@@ -12,6 +12,7 @@ import Spinner from "@modules/common/icons/spinner"
 import Ideal from "@modules/common/icons/ideal"
 import Bancontact from "@modules/common/icons/bancontact"
 import { useState } from "react"
+import { useElements, useStripe } from "@stripe/react-stripe-js"
 
 
 /* Map of payment provider_id to their title and icon. Add in any payment providers you want to use. */

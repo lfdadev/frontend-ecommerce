@@ -5,6 +5,7 @@ import About from "@modules/home/components/about"
 import SkeletonHomepageProducts from "@modules/skeletons/components/skeleton-homepage-products"
 import { Metadata } from "next"
 import { Suspense } from "react"
+import { Toaster } from "react-hot-toast"
 
 export const metadata: Metadata = {
   title: "Home",
@@ -19,6 +20,7 @@ export default async function Home() {
     <>
       <Hero />
       <About />
+      <Toaster />
       <Suspense fallback={<SkeletonHomepageProducts count={count} />}>
         <FeaturedProducts collections={collections} />
       </Suspense>
