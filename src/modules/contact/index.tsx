@@ -30,7 +30,7 @@ const Contact = () => {
           <p className="text-base">
             Solo reemplazamos los artículos si están defectuosos o dañados. Si
             necesitas cambiarlo por el mismo artículo, envíanos un email a
-            info@lafuerzadelalma.com y envía tu artículo a: <strong>C/Torrent de la
+            lafuerzadelalma.fya@gmail.com y envía tu artículo a: <strong>C/Torrent de la
             polvora 129, 5.</strong>
           </p>
         </div>
@@ -59,7 +59,7 @@ const Contact = () => {
             crédito. Puede tomar algún tiempo antes de que se publique
             oficialmente tu reembolso. Si has hecho todo esto y aún no has
             recibido tu reembolso, comunícate con nosotros al email
-            <strong > info@lafuerzadelalma.com</strong> o al número <strong >626889880</strong> (Whatsapp).
+            <strong > lafuerzadelalma.fya@gmail.com</strong> o al número <strong >626889880</strong> (Whatsapp).
           </p>
         </div>
 
