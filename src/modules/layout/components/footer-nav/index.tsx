@@ -15,7 +15,7 @@ const FooterNav = () => {
           <Link href="/" className="text-base font-semibold small:text-xl-semi uppercase">
             La fuerza del alma
           </Link>
-          <p className="underline text-sm small:text-base">info@lafuerzadelalma.com</p>
+          <p className="underline text-sm small:text-base">lafuerzadelalma.fya@gmail.com</p>
           <p className="text-sm small:text-base">Whatsapp: +34 626 88 98 80</p>
           <p className="text-sm small:text-base">Mataró, Barcelona</p>
         </div>
