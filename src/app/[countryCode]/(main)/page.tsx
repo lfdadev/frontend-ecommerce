@@ -7,11 +7,12 @@ import Hero from "@modules/home/components/hero"
 import { ProductCollectionWithPreviews } from "types/global"
 import { cache } from "react"
 import About from "@modules/home/components/about"
+import Subscription from "@modules/home/components/subscription"
 
 export const metadata: Metadata = {
-  title: "Medusa Next.js Starter Template",
+  title: "Birmin Storefront",
   description:
-    "A performant frontend ecommerce starter template with Next.js 14 and Medusa.",
+    "E-commerce storefront built with Medusa, Next.js, and Tailwind CSS.",
 }
 
 const getCollectionsWithProducts = cache(
@@ -70,12 +71,14 @@ export default async function Home({
   return (
     <>
       <Hero />
-      <About />
+
       <div className="py-12">
         <ul className="flex flex-col gap-x-6">
           <FeaturedProducts collections={collections} region={region} />
         </ul>
       </div>
+      <Subscription />
+      <About />
     </>
   )
 }

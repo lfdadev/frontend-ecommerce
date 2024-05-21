@@ -34,6 +34,9 @@ module.exports = {
           80: "#1F2937",
           90: "#111827",
         },
+        primary: "#CB6CE6",
+        secondary:"#6CE680",
+        terciary:"#3D894A"
       },
       borderRadius: {
         none: "0px",
@@ -69,6 +72,7 @@ module.exports = {
           "Ubuntu",
           "sans-serif",
         ],
+        poetsen: ["Poetsen One", "sans-serif"],
       },
       keyframes: {
         ring: {

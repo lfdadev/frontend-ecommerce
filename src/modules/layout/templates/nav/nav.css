@@ -1,0 +1,70 @@
+.runing-row.top {
+  position: absolute;
+  left: 0;
+  z-index: 10;
+}
+@media (max-width: 1366px) {
+  .runing-row {
+    height: 40px;
+  }
+}
+.runing-row {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 70px;
+  overflow: hidden;
+}
+
+.runing-row.top.or div {
+  background-position: left center;
+  background-repeat: repeat-x;
+  background-size: auto 70px;
+}
+@media (max-width: 1366px) {
+  .runing-row.top div {
+    background-position: left center;
+    background-repeat: repeat-x;
+    background-size: auto 40px;
+  }
+}
+.runing-row.footer div,
+.runing-row.or div {
+  background-position: left center;
+  background-repeat: repeat-x;
+  background-size: auto 70px;
+}
+.runing-row.top div {
+  background-position: left center;
+  background-repeat: repeat-x;
+  background-size: auto 80px;
+}
+.runing-row div {
+  background-image: url("/images/club5.png");
+}
+@media (max-width: 1366px) {
+  .runing-row div {
+    height: 40px;
+    background-position: left center;
+    background-repeat: repeat-x;
+    background-size: auto 40px;
+  }
+}
+.runing-row div {
+  border-bottom: 2px solid #000000;
+  display: block;
+  position: absolute;
+  width: 200%;
+  height: 67px;
+  animation: scroll-left 80s linear infinite;
+  background-position: 0 0;
+}
+
+@keyframes scroll-left {
+  0% {
+    background-position: left; /* Inicia desde la derecha */
+  }
+  100% {
+    background-position: right; /* Termina en la izquierda */
+  }
+}

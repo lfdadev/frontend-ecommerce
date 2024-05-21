@@ -1,24 +1,24 @@
 "use client"
 
 import { Popover, Transition } from "@headlessui/react"
-import { ArrowRightMini, XMark } from "@medusajs/icons"
+import { XMark } from "@medusajs/icons"
 import { Region } from "@medusajs/medusa"
 import { Text, clx, useToggleState } from "@medusajs/ui"
 import { Fragment } from "react"
 
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
-import CountrySelect from "../country-select"
+
 
 const SideMenuItems = {
-  Home: "/",
-  Store: "/store",
-  Search: "/search",
-  Account: "/account",
-  Cart: "/cart",
+  Inicio: "/",
+  Tienda: "/store",
+  /*Buscar: "/search",*/
+  Cuenta: "/account",
+  Cesta: "/cart",
 }
 
 const SideMenu = ({ regions }: { regions: Region[] | null }) => {
-  const toggleState = useToggleState()
+  // const toggleState = useToggleState()
 
   return (
     <div className="h-full">
@@ -27,7 +27,7 @@ const SideMenu = ({ regions }: { regions: Region[] | null }) => {
           {({ open, close }) => (
             <>
               <div className="relative flex h-full">
-                <Popover.Button data-testid="nav-menu-button" className="relative h-full flex items-center transition-all ease-out duration-200 focus:outline-none hover:text-ui-fg-base">
+                <Popover.Button data-testid="nav-menu-button" className="font-semibold uppercase tracking-wide hover:text-primary relative h-full flex items-center transition-all ease-out duration-200 focus:outline-none">
                   Menu
                 </Popover.Button>
               </div>
@@ -66,7 +66,7 @@ const SideMenu = ({ regions }: { regions: Region[] | null }) => {
                       })}
                     </ul>
                     <div className="flex flex-col gap-y-6">
-                      <div
+                      {/* <div
                         className="flex justify-between"
                         onMouseEnter={toggleState.open}
                         onMouseLeave={toggleState.close}
@@ -83,10 +83,9 @@ const SideMenu = ({ regions }: { regions: Region[] | null }) => {
                             toggleState.state ? "-rotate-90" : ""
                           )}
                         />
-                      </div>
+                      </div> */}
                       <Text className="flex justify-between txt-compact-small">
-                        © {new Date().getFullYear()} Medusa Store. All rights
-                        reserved.
+                        © {new Date().getFullYear()} Birmin Store. Derechos reservados.
                       </Text>
                     </div>
                   </div>

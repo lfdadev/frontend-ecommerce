@@ -166,15 +166,15 @@ export default function ProductActions({
           onClick={handleAddToCart}
           disabled={!inStock || !variant || !!disabled || isAdding}
           variant="primary"
-          className="w-full h-10"
+          className="w-full h-10 rounded-sm"
           isLoading={isAdding}
           data-testid="add-product-button"
         >
           {!variant
-            ? "Select variant"
+            ? "Selecciona opción"
             : !inStock
-            ? "Out of stock"
-            : "Add to cart"}
+            ? "Producto agotado"
+            : "Añadir a la cesta"}
         </Button>
         <MobileActions
           product={product}

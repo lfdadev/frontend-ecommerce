@@ -14,29 +14,31 @@ export default function ProductRail({
 }) {
   const { products } = collection
 
-  if (!products) {
+  if (!products || products.length === 0) {
     return null
   }
 
+  // Filtrar los primeros 3 productos
+  const firstThreeProducts = products.slice(0, 4)
+
   return (
-    <div className="content-container py-12 small:py-24">
+    <div className="content-container py-12 small:py-16">
       <div className="flex justify-between mb-8">
-        <Text className="txt-xlarge">{collection.title}</Text>
+          <Text className="txt-xlarge font-semibold">{collection.title}</Text>
         <InteractiveLink href={`/collections/${collection.handle}`}>
-          View all
+          Ver más
         </InteractiveLink>
       </div>
-      <ul className="grid grid-cols-2 small:grid-cols-3 gap-x-6 gap-y-24 small:gap-y-36">
-        {products &&
-          products.map((product) => (
-            <li key={product.id}>
-              <ProductPreview
-                productPreview={product}
-                region={region}
-                isFeatured
-              />
-            </li>
-          ))}
+      <ul className="grid grid-cols-2 small:grid-cols-4 gap-x-16 gap-y-24 small:gap-y-36">
+        {firstThreeProducts.map((product) => (
+          <li key={product.id}>
+            <ProductPreview
+              productPreview={product}
+              region={region}
+              isFeatured
+            />
+          </li>
+        ))}
       </ul>
     </div>
   )

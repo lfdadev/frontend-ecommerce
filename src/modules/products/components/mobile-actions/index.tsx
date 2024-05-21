@@ -113,7 +113,7 @@ const MobileActions: React.FC<MobileActionsProps> = ({
                   <span>
                     {variant
                       ? Object.values(options).join(" / ")
-                      : "Select Options"}
+                      : "Selecciona opción"}
                   </span>
                   <ChevronDown />
                 </div>
@@ -126,10 +126,10 @@ const MobileActions: React.FC<MobileActionsProps> = ({
                 data-testid="mobile-cart-button"
               >
                 {!variant
-                  ? "Select variant"
+                  ? "Selecciona opción"
                   : !inStock
-                  ? "Out of stock"
-                  : "Add to cart"}
+                  ? "Producto agotado"
+                  : "Añadir a la cesta"}
               </Button>
             </div>
           </div>
