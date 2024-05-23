@@ -32,6 +32,7 @@ export default async function Nav() {
                 alt="logo text"
                 width={120}
                 height={120}
+                className="w-20 small:w-[120px]"
               />
             </LocalizedClientLink>
           </div>
