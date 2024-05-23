@@ -19,14 +19,14 @@ const ProductTabs = ({ product }: ProductTabsProps) => {
       component: <ProductInfoTab product={product} />,
     },
     {
-      label: "Envíos y devolucione",
+      label: "Envíos y devoluciones",
       component: <ShippingInfoTab />,
     },
   ]
 
   return (
     <div className="w-full">
-      {/* <Accordion type="multiple">
+      <Accordion type="multiple">
         {tabs.map((tab, i) => (
           <Accordion.Item
             key={i}
@@ -37,7 +37,7 @@ const ProductTabs = ({ product }: ProductTabsProps) => {
             {tab.component}
           </Accordion.Item>
         ))}
-      </Accordion> */}
+      </Accordion>
     </div>
   )
 }
