@@ -11,26 +11,9 @@ export default async function FeaturedProducts({
   region: Region
 }) {
   
-  const shirts = collections.filter(
-    (collection) => collection.title === "Camisetas"
-  )
-
-  const jeans = collections.filter(
-    (collection) => collection.title === "Pantalones"
-  )
-
-  return (
-    <ul>
-      {shirts.map((collection) => (
-        <li key={collection.id}>
-          <ProductRail collection={collection} region={region} />
-        </li>
-      ))}
-      {jeans.map((collection) => (
-        <li key={collection.id}>
-          <ProductRail collection={collection} region={region} />
-        </li>
-      ))}
-    </ul>
-  )
+  return collections.map((collection) => (
+    <li key={collection.id}>
+      <ProductRail collection={collection} region={region} />
+    </li>
+  ))
 }
