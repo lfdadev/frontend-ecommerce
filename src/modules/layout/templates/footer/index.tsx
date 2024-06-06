@@ -11,21 +11,25 @@ export default async function Footer() {
   const { product_categories } = await getCategoriesList(0, 6)
 
   return (
-    <footer className="border-t border-ui-border-base w-full">
+    <footer className="border-t border-ui-border-base w-full pt-12 small:pt-32 pb-10">
       <div className="content-container flex flex-col w-full">
-        <div className="flex flex-col gap-y-6 xsmall:flex-row items-start justify-between py-40">
-          <div>
+        <div className="flex flex-col gap-y-6 xsmall:flex-row items-start justify-between">
+          <div className="flex flex-col gap-2">
             <LocalizedClientLink
               href="/"
               className="txt-compact-xlarge-plus text-ui-fg-subtle hover:text-ui-fg-base uppercase"
             >
-              <Image
-                src="/images/logo.jpg"
-                alt="logo text"
-                width={120}
-                height={120}
-              />
+              <h2 className="font-bold tracking-wider">Birmin Gallery</h2>
             </LocalizedClientLink>
+            <Text className="txt-medium-plus txt-ui-fg-subtle italic font-semibold text-neutral-500">
+              Original clothing and accessories
+            </Text>
+            <Text className="txt-small-plus txt-ui-fg-subtle">
+              San Pelayo de Navia, Rúa Laxielas nº 8
+            </Text>
+            <Text className="txt-small-plus txt-ui-fg-subtle">
+              685884402
+            </Text>
           </div>
           <div className="text-small-regular gap-10 md:gap-x-16 grid grid-cols-2 sm:grid-cols-3">
             {/* {product_categories && product_categories?.length > 0 && (
@@ -148,6 +152,20 @@ export default async function Footer() {
               </ul>
             </div>
           </div>
+        </div>
+
+        <div className="mt-10 flex flex-col items-center justify-center">
+          <LocalizedClientLink
+            href="/legal"
+            className="flex items-center gap-2 text-center hover:underline"
+          >
+            <Text className="txt-small-plus txt-ui-fg-subtle text-center font-semibold">
+              Aviso Legal y Política de Privacidad
+            </Text>
+          </LocalizedClientLink>
+          <Text className="txt-small-plus txt-ui-fg-subtle text-center">
+            © 2024 Birmin Gallery. Todos los derechos reservados.
+          </Text>
         </div>
       </div>
     </footer>
