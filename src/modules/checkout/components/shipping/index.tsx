@@ -151,7 +151,7 @@ const Shipping: React.FC<ShippingProps> = ({
 
           <Button
             size="large"
-            className="mt-6"
+            className="mt-6 rounded-sm"
             onClick={handleSubmit}
             isLoading={isLoading}
             disabled={!cart.shipping_methods[0]}

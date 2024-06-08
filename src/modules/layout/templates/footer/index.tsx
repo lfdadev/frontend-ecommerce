@@ -28,6 +28,9 @@ export default async function Footer() {
               San Pelayo de Navia, Rúa Laxielas nº 8
             </Text>
             <Text className="txt-small-plus txt-ui-fg-subtle">
+              birmingallery@gmail.com
+            </Text>
+            <Text className="txt-small-plus txt-ui-fg-subtle">
               685884402
             </Text>
           </div>
@@ -121,32 +124,22 @@ export default async function Footer() {
               <ul className="grid grid-cols-1 gap-y-2 text-ui-fg-subtle txt-small">
                 <li>
                   <a
-                    href="#"
+                    href="https://www.instagram.com/birmingallery/"
                     target="_blank"
                     rel="noreferrer"
-                    className="hover:text-ui-fg-base"
+                    className="hover:text-ui-fg-base text-purple-600 font-semibold"
                   >
                     Instagram
                   </a>
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="https://www.tiktok.com/@birmingallery"
                     target="_blank"
                     rel="noreferrer"
-                    className="hover:text-ui-fg-base"
+                    className="hover:text-ui-fg-base text-red-500 font-semibold"
                   >
-                    Wallapop
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="hover:text-ui-fg-base"
-                  >
-                    Vinted
+                    TikTok
                   </a>
                 </li>
               </ul>

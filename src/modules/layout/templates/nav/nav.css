@@ -3,8 +3,9 @@
   left: 0;
   z-index: 10;
 }
-@media (max-width: 1366px) {
+@media (max-width: 768px) {
   .runing-row {
+    display: none;
     height: 40px;
   }
 }
@@ -21,8 +22,9 @@
   background-repeat: repeat-x;
   background-size: auto 70px;
 }
-@media (max-width: 1366px) {
+@media (max-width: 768px) {
   .runing-row.top div {
+    display: none;
     background-position: left center;
     background-repeat: repeat-x;
     background-size: auto 40px;
@@ -42,7 +44,7 @@
 .runing-row div {
   background-image: url("/images/banner-row.png");
 }
-@media (max-width: 1366px) {
+@media (max-width: 768px) {
   .runing-row div {
     height: 40px;
     background-position: left center;
@@ -51,22 +53,20 @@
   }
 }
 .runing-row div {
-  border-bottom: 2px solid #000000;
   display: block;
   position: absolute;
   width: 200%;
   height: 67px;
-  animation: scroll-left 80s linear infinite;
+  animation: scroll-left 40s linear infinite;
   background-position: 0 0;
 }
 
-@media (max-width: 1366px) {
+@media (max-width: 768px) {
   .runing-row div {
-    border-bottom: 2px solid #000000;
     display: block;
     position: absolute;
     width: 200%;
-    height: 57px;
+    height: 59px;
     animation: scroll-left 60s linear infinite;
     background-position: 0 0;
   }

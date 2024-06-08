@@ -76,6 +76,7 @@ const GiftCardPaymentButton = () => {
       onClick={handleOrder}
       isLoading={submitting}
       data-testid="submit-order-button"
+      className="rounded-sm"
     >
       Realizar pedido
     </Button>
@@ -173,6 +174,7 @@ const StripePaymentButton = ({
         size="large"
         isLoading={submitting}
         data-testid={dataTestId}
+        className="rounded-sm"
       >
         Realizar pedido
       </Button>
@@ -274,6 +276,7 @@ const ManualTestPaymentButton = ({ notReady }: { notReady: boolean }) => {
         onClick={handlePayment}
         size="large"
         data-testid="submit-order-button"
+        className="rounded-sm"
       >
         Realizar pedido
       </Button>
