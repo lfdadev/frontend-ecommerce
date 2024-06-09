@@ -70,9 +70,7 @@
     animation: scroll-left 60s linear infinite;
     background-position: 0 0;
   }
-  
 }
-
 
 @keyframes scroll-left {
   0% {
@@ -81,4 +79,30 @@
   100% {
     background-position: right; /* Termina en la izquierda */
   }
+}
+
+.underline-text {
+  display: inline-block;
+  position: relative;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.underline-text::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: -5px; /* Ajusta este valor para aumentar el padding */
+  left: 0;
+  background-color: #000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.underline-text:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }

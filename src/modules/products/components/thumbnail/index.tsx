@@ -4,6 +4,7 @@ import Image from "next/image"
 import React from "react"
 
 import PlaceholderImage from "@modules/common/icons/placeholder-image"
+import { PricedProduct } from "@medusajs/medusa/dist/types/pricing"
 
 type ThumbnailProps = {
   thumbnail?: string | null
@@ -12,6 +13,7 @@ type ThumbnailProps = {
   isFeatured?: boolean
   className?: string
   "data-testid"?: string
+  pricedProduct: PricedProduct
 }
 
 const Thumbnail: React.FC<ThumbnailProps> = ({
@@ -21,6 +23,7 @@ const Thumbnail: React.FC<ThumbnailProps> = ({
   isFeatured,
   className,
   "data-testid": dataTestid,
+  pricedProduct,
 }) => {
   const initialImage = thumbnail || images?.[0]?.url
 

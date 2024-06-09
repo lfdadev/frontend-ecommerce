@@ -65,9 +65,9 @@ const Subscription = () => {
             />
             <button
               type="submit"
-              className="px-4 py-2 small:px-6 small:py-3 bg-secondary rounded-sm text-black font-bold hover:bg-terciary flex items-center justify-center"
+              className="px-4 py-2 small:px-6 small:py-3 bg-secondary rounded-sm border border-white text-black font-bold hover:bg-terciary flex items-center justify-center transition-all "
             >
-              {isLoading ? <Spinner size={24} /> : "Suscribirse"}
+              {isLoading ? <Spinner size={24} /> : "Únete"}
             </button>
           </div>
         </form>
