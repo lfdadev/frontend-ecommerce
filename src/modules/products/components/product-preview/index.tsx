@@ -42,8 +42,8 @@ export default async function ProductPreview({
     >
       <div data-testid="product-wrapper" className="relative">
         {isSoldOut && (
-          <div className="absolute inset-0 flex items-center justify-center bg-opacity-50 z-10">
-            <Image src="/images/soldout.svg" alt="soldout" width={200} height={100} />
+          <div className="absolute inset-0 flex items-center justify-center z-10">
+            <Image src="/images/soldout.svg" alt="soldout" width={250} height={250} />
           </div>
         )}
         <Thumbnail
