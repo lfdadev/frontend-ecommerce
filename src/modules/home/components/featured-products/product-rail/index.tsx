@@ -24,7 +24,7 @@ export default function ProductRail({
   return (
     <div className="content-container py-12 small:py-16">
       <div className="flex justify-between mb-8">
-          <Text className="txt-xlarge font-semibold">{collection.title}</Text>
+        <Text className="txt-xlarge font-semibold">{collection.title}</Text>
         <InteractiveLink href={`/collections/${collection.handle}`}>
           Ver más
         </InteractiveLink>

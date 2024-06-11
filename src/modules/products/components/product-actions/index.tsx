@@ -131,7 +131,7 @@ export default function ProductActions({
       quantity: 1,
       countryCode,
     })
-
+    
     setIsAdding(false)
   }
 
