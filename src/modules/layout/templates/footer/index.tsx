@@ -3,8 +3,6 @@ import { Text, clx } from "@medusajs/ui"
 import { getCategoriesList, getCollectionsList } from "@lib/data"
 
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
-import MedusaCTA from "@modules/layout/components/medusa-cta"
-import Image from "next/image"
 
 export default async function Footer() {
   const { collections } = await getCollectionsList(0, 6)
