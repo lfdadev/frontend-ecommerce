@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import { Suspense } from "react"
-import "./nav.css"
 
 import { listRegions } from "@lib/data"
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
@@ -13,8 +12,8 @@ export default async function Nav() {
 
   return (
     <div className="sticky top-0 inset-x-0 z-50 group">
-      <header className="relative h-24 mx-auto border-b duration-200 bg-white border-ui-border-base font-semibold uppercase">
-        <nav className="content-container flex items-center justify-between w-full h-full text-md">
+      <header className="relative h-20 mx-auto border-b duration-200 bg-white border-ui-border-base ">
+        <nav className="content-container flex items-center justify-between w-full h-full text-md font-semibold uppercase">
           <div className="flex-1 basis-0 h-full flex items-center">
             <div className="h-full">
               <SideMenu regions={regions} />
@@ -24,16 +23,15 @@ export default async function Nav() {
           <div className="flex items-center h-full">
             <LocalizedClientLink
               href="/"
-              className="txt-compact-xlarge-plus hover:text-ui-fg-base uppercase"
+              className="txt-compact-xlarge-plus hover:text-ui-fg-base uppercase flex items-center gap-4 text-xl font-semibold"
               data-testid="nav-store-link"
             >
-              <Image
-                src="/images/logo.jpg"
-                alt="logo text"
-                width={120}
-                height={120}
-                className="w-20 small:w-[120px]"
-              />
+              <p className="hidden small:block">
+                <span className="font-normal normal-case">La</span> Fuerza{" "}
+                <span className="font-normal lowercase">del</span> Alma
+              </p>
+
+              <img src="/images/logo.webp" className="w-14" alt="logo" />
             </LocalizedClientLink>
           </div>
 
@@ -72,8 +70,20 @@ export default async function Nav() {
             </Suspense>
           </div>
         </nav>
-        <div className="runing-row top or">
-          <div></div>
+        <div className="bg-neutral-800 w-full text-white py-3 flex flex-col small:flex-row items-center justify-center text-sm italic font-normal gap-1 small:gap-6">
+          <p>Envíos gratis por compras mayores a 50 €</p>
+          <p>
+            Visita nuestro{" "}
+            <a
+              href="https://www.instagram.com/lafuerzadelalma.fa/"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-white text-primary font-semibold"
+            >
+              Instagram
+            </a>{" "}
+            para información sobre talleres
+          </p>
         </div>
       </header>
     </div>

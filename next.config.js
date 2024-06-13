@@ -27,7 +27,7 @@ const nextConfig = withStoreConfig({
       },
       {
         protocol: "https",
-        hostname:"birmin-server.s3.eu-north-1.amazonaws.com",
+        hostname: "medusa-alma-ecommerce.s3.eu-west-3.amazonaws.com",
       },
     ],
   },

@@ -2,6 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from "next/image"
 import { motion } from "framer-motion"
+import ContactButtom from "@modules/common/components/whatsapp"
 
 const Hero = () => {
   const animationOptions = {
@@ -21,37 +22,42 @@ const Hero = () => {
 
   return (
     <div className="h-[100vh] small:h-[75vh] w-full relative bg-ui-bg-subtle small:overflow-hidden">
-      <div className="flex flex-col small:flex-row h-full bg-black justify-center small:justify-between mt-0 small:mt-16 items-center relative">
-        <div className="flex flex-col gap-4 text-end w-full items-end small:items-end px-5 pt-32 small:px-20 small:py-20 z-30">
+      <div className="flex h-full pb-32 small:pb-0 items-end relative">
+        <div className="flex flex-col gap-4 small:gap-5 text-end w-full items-end small:items-start px-5 small:px-20 small:py-20 z-30">
           <motion.div
             animate={animationOptions}
             initial={{ opacity: 0 }}
-            className="text-sm small:text-base text-black font-bold px-5 py-2 bg-gradient-to-r from-primary to-secondary"
+            className="text-xs small:text-sm text-light bg-primary px-4 py-3 rounded-sm text-black"
           >
-            ORIGINAL CLOTHES
+            handmade in <span className="font-semibold">Mataró, Barcelona</span>
           </motion.div>
           <motion.h1
             animate={animationOptions2}
             initial={{ opacity: 0 }}
-            className="text-[2.8rem] small:text-[4rem] font-bold text-white whitespace-nowrap"
+            className="text-3xl small:text-4xl text-white drop-shadow-md shadow-black uppercase font-bold tracking-wide"
           >
-            D<span className="text-primary italic">O</span>N&apos;T{" "}
-            <span className="text-secondary italic">O</span>BSESS
+            <span className="text-4xl small:text-5xl text-primary">A</span>
+            lma,{" "}
+            <span className="text-4xl small:text-5xl text-primary">C</span>
+            uerpo y{" "}
+            <span className="text-4xl small:text-5xl text-primary">M</span>
+            ente
           </motion.h1>
           <motion.p
             animate={animationOptions3}
             initial={{ opacity: 0 }}
             className="text-white italic"
           >
-            Join the crew
+            Talleres y productos esotéricos
           </motion.p>
         </div>
         <img
-          src="/images/hero.svg"
-          alt="fondo"
-          className="w-full small:w-[700px] h-full absolute small:relative z-10 object-cover filter brightness-50 small:brightness-75"
+          src="/images/heroweb.webp"
+          alt="test"
+          className="absolute inset-0 filter brightness-75 z-0 h-full small:h-fit object-cover"
         />
       </div>
+      <ContactButtom />
     </div>
   )
 }

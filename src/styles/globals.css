@@ -1,7 +1,21 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
-@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+/** Underline Navbar */
+
+.underline-hover::after {
+  content: "";
+  height: 1px;
+  width: 0;
+  background-color: black;
+  display: block;
+  transition: all 350ms;
+}
+
+.underline-hover:hover::after {
+  width: 100%;
+}
 
 @layer utilities {
   /* Chrome, Safari and Opera */
@@ -52,7 +66,7 @@
 
 @layer components {
   .content-container {
-    @apply max-w-[1440px] w-full mx-auto px-6;
+    @apply max-w-[1440px] w-full mx-auto px-4;
   }
 
   .contrast-btn {

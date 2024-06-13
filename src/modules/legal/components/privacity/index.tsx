@@ -4,11 +4,11 @@ export const Privacity = () => {
   return (
     <div className="flex flex-col gap-6">
       <p>
-        Daniel Romero Rial informa a los usuarios del sitio web sobre su política respecto
+        Mar informa a los usuarios del sitio web sobre su política respecto
         del tratamiento y protección de los datos de carácter personal de los
         usuarios y clientes que puedan serrecabados por la navegación o
         contratación de servicios a través de su sitio web. En este sentido
-        Daniel Romero Rial, garantiza el cumplimiento de la normativa vigente en materia
+        Mar, garantiza el cumplimiento de la normativa vigente en materia
         deprotección de datos personales, reflejada en la Ley Orgánica 15/1999
         de 13 de diciembre, de Protección de Datos de Carácter Personal y en el
         Real Decreto 1720/2007, de 21 diciembre, por el que se aprueba el
@@ -19,12 +19,12 @@ export const Privacity = () => {
       <h3 className="font-semibold">RECOGIDA, FINALIDAD Y TRATAMIENTO DE DATOS</h3>
 
       <p>
-        Daniel Romero Rial tiene el deber de informar a los usuarios de su sitio web acerca
+        Mar tiene el deber de informar a los usuarios de su sitio web acerca
         de la recogida dedatos de carácter personal que pueden llevarse a cabo,
         bien sea mediante el envío de correoelectrónico o al cumplimentar los
-        formularios incluidos en el sitio web. En este sentido, Daniel Romero Rial será
+        formularios incluidos en el sitio web. En este sentido, Mar será
         considerado como responsable de los datos recabados mediante los medios
-        anteriormente descritos. A su vez Daniel Romero Rial informa a los
+        anteriormente descritos. A su vez Mar informa a los
         usuarios de que la finalidad del tratamiento de los datos recabados
         contempla: La atención de solicitudes realizadas por los usuarios, la
         inclusión en la agenda de contactos, la prestación de servicios, la
@@ -34,18 +34,18 @@ export const Privacity = () => {
         almacenamiento, la modificación, la transferencia y otras acciones sobre
         datos de carácter personal, tienen la consideración de tratamiento de
         datos personales. Todos los datos personales, que sean recogidos a
-        través del sitio web de Daniel Romero Rial, y por tanto tenga la consideración de
+        través del sitio web de Mar, y por tanto tenga la consideración de
         tratamiento de datos de carácter personal, serán incorporados en los
         ficheros.
       </p>
 
       <p>
-        Daniel Romero Rial informa a los usuarios de que sus datos personales no serán
+        Mar informa a los usuarios de que sus datos personales no serán
         cedidos a terceras organizaciones, con la salvedad de que dicha cesión
         de datos este amparada en una obligación legal o cuando la prestación de
         un servicio implique la necesidad de una relación contractual con un
         encargado de tratamiento. En este último caso, solo se llevará a cabo la
-        cesión de datos al tercero cuando Daniel Romero Rial disponga del consentimiento
+        cesión de datos al tercero cuando Mar disponga del consentimiento
         expreso del usuario.
       </p>
 
@@ -67,14 +67,14 @@ export const Privacity = () => {
 
       <ul>
         <li>Responsable:</li>
-        <li>Identidad: Daniel Romero Rial</li>
+        <li>Identidad: Mar, La fuerza del alma</li>
         <li>DNI: 53859684D</li>
-        <li>Dirección fiscal: San Pelayo de Navia Rúa Laxielas nº8</li>
-        <li>Teléfono: 685884402</li>
+        <li>Dirección fiscal: C/Sant Benet,14, 2ndo 1ra</li>
+        <li>Teléfono: 626 88 98 80</li>
       </ul>
 
       <p>
-        Copyright © Daniel Romero Rial | RESERVADOS TODOS LOS DERECHOS
+        Copyright © Mar | RESERVADOS TODOS LOS DERECHOS
       </p>
     </div>
   )

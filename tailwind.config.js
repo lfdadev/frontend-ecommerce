@@ -34,7 +34,7 @@ module.exports = {
           80: "#1F2937",
           90: "#111827",
         },
-        primary: "#CB6CE6",
+        primary: "#42DF96",
         secondary:"#6CE680",
         terciary:"#3D894A"
       },

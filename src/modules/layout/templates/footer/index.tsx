@@ -17,19 +17,19 @@ export default async function Footer() {
               href="/"
               className="txt-compact-xlarge-plus text-ui-fg-subtle hover:text-ui-fg-base uppercase"
             >
-              <h2 className="font-bold tracking-wider">Birmin Gallery</h2>
+              <h2 className="font-bold tracking-wider">La Fuerza del Alma</h2>
             </LocalizedClientLink>
             <Text className="txt-medium-plus txt-ui-fg-subtle italic font-semibold text-neutral-500">
-              Original clothing and accessories
+              Productos esotéricos y talleres
             </Text>
             <Text className="txt-small-plus txt-ui-fg-subtle">
-              San Pelayo de Navia, Rúa Laxielas nº 8
+              Mataró, Barcelona
             </Text>
             <Text className="txt-small-plus txt-ui-fg-subtle">
-              birmingallery@gmail.com
+              lafuerzadelalma.fya@gmail.com
             </Text>
             <Text className="txt-small-plus txt-ui-fg-subtle">
-              685884402
+              Whatsapp: +34 626 88 98 80
             </Text>
           </div>
           <div className="text-small-regular gap-10 md:gap-x-16 grid grid-cols-2 sm:grid-cols-3">
@@ -118,26 +118,36 @@ export default async function Footer() {
               </div>
             )}
             <div className="flex flex-col gap-y-2">
-              <span className="txt-small-plus txt-ui-fg-base">Social</span>
+              <span className="txt-small-plus txt-ui-fg-base">Contacto</span>
               <ul className="grid grid-cols-1 gap-y-2 text-ui-fg-subtle txt-small">
                 <li>
                   <a
-                    href="https://www.instagram.com/birmingallery/"
+                    href="https://www.instagram.com/lafuerzadelalma.fa/"
                     target="_blank"
                     rel="noreferrer"
-                    className="hover:text-ui-fg-base text-purple-600 font-semibold"
+                    className="hover:text-ui-fg-base text-pink-600 font-semibold"
                   >
                     Instagram
                   </a>
                 </li>
                 <li>
                   <a
-                    href="https://www.tiktok.com/@birmingallery"
+                    href="https://t.me/lafuerzadelalmaa"
                     target="_blank"
                     rel="noreferrer"
-                    className="hover:text-ui-fg-base text-red-500 font-semibold"
+                    className="hover:text-ui-fg-base text-blue-600 font-semibold"
                   >
-                    TikTok
+                    Telegram
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://api.whatsapp.com/send/?phone=34626889880&text&type=phone_number&app_absent=0"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-ui-fg-base text-green-500 font-semibold"
+                  >
+                    WhatsApp
                   </a>
                 </li>
               </ul>
@@ -155,7 +165,7 @@ export default async function Footer() {
             </Text>
           </LocalizedClientLink>
           <Text className="txt-small-plus txt-ui-fg-subtle text-center">
-            © 2024 Birmin Gallery. Todos los derechos reservados.
+            © 2024 La Fuerza del Alma. Todos los derechos reservados.
           </Text>
         </div>
       </div>

@@ -4,17 +4,17 @@ export const Cookies = () => {
   return (
     <div className="flex flex-col gap-6">
       <p>
-        Desde Birmin Gallery te informamos que nuestra página web utiliza
+        Desde La Fuerza del Alma te informamos que nuestra página web utiliza
         cookies para analizar la navegación de usuarios. Esta Política de
         Cookies, forma parte de la Política de Privacidad del Sitio Web alojado
-        bajo el nombre de dominio www.birmingallery.com y bajo cualquiera de los
+        bajo el nombre de dominio www.lafuerzadelalma.com y bajo cualquiera de los
         subdominios o páginas web dependientes del mismo.
       </p>
 
       <p>
         Utilizamos cookies para mejorar nuestros servicios. Al continuar
         navegando por nuestro Sitio web entendemos que aceptas su uso y nuestra
-        Política de Cookies. Birmin Gallery podrá revisar el contenido de estas
+        Política de Cookies. La Fuerza del Alma podrá revisar el contenido de estas
         condiciones de uso cuando lo crea conveniente, o las modificaciones
         efectuadas en el sitio Web así lo recomienden. Puesto que el uso de los
         contenidos y servicios de esta página Web supone la aceptación de las
@@ -40,7 +40,7 @@ export const Cookies = () => {
         Utilizamos cookies para obtener más información sobre la forma en que
         los visitantes interactúan con nuestro contenido y nos ayudan a mejorar
         la experiencia de los usuarios cuando visitan el sitio Web
-        www.birmingallery.com
+        www.lafuerzadelalma.com
       </p>
 
       <h3 className="font-semibold">
@@ -49,7 +49,7 @@ export const Cookies = () => {
 
       <p>
         La información obtenida por las cookies de este sitio Web es tratada por
-        el editor del sitio Web www.birmingallery.com
+        el editor del sitio Web www.lafuerzadelalma.com
       </p>
       <p>
         La aplicación que utilizamos para obtener y analizar la información de

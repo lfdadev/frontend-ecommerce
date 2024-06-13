@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { Text } from "@medusajs/ui"
 import { ProductPreviewType } from "types/global"
 import { retrievePricedProductById } from "@lib/data"
@@ -42,8 +43,8 @@ export default async function ProductPreview({
     >
       <div data-testid="product-wrapper" className="relative">
         {isSoldOut && (
-          <div className="absolute inset-0 flex items-center justify-center z-10">
-            <Image src="/images/soldout.svg" alt="soldout" width={250} height={250} />
+          <div className="absolute inset-0 flex items-start justify-center z-10 mt-6 small:mt-10">
+            <img src="/images/soldout.svg" alt="soldout" className="w-20 small:w-44" />
           </div>
         )}
         <Thumbnail

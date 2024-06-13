@@ -29,9 +29,9 @@ const FAQTemplate = () => {
         <p className="txt-ui-fg-subtle">
           Solo reemplazamos los artículos si están defectuosos o dañados. Si
           necesitas cambiarlo por el mismo artículo, envíanos un email a
-          birmingallery@gmail.com y envía tu artículo a:{" "}
+          lafuerzadelalma.fya@gmail.com y envía tu artículo a:{" "}
           <span className="font-semibold italic text-blue-800">
-            San Pelayo de Navia - Rúa Laxielas nº8, Vigo, Galicia
+            C/Torrent de la polvora 129, 5
           </span>
           .
         </p>
@@ -59,8 +59,8 @@ const FAQTemplate = () => {
           crédito. Puede tomar algún tiempo antes de que se publique
           oficialmente tu reembolso. Si has hecho todo esto y aún no has
           recibido tu reembolso, comunícate con nosotros al email
-          birmingallery@gmail.com o al número{" "}
-          <span className="font-semibold italic text-blue-800">685884402</span>{" "}
+          lafuerzadelalma.fya@gmail.com o al número{" "}
+          <span className="font-semibold italic text-blue-800">626889880</span>{" "}
           (Whatsapp).
         </p>
       </div>
@@ -69,7 +69,7 @@ const FAQTemplate = () => {
         <p className="txt-ui-fg-subtle">
           Por favor, la devolución debe enviarse a la siguiente dirección{" "}
           <span className="font-semibold italic text-blue-800">
-            San Pelayo de Navia - Rúa Laxielas nº8, Vigo, Galicia
+            C/Torrent de la polvora,129 ,5
           </span>
           . Usted será responsable de pagar sus propios costos de envío para
           devolver su artículo. Los costos de envío no son reembolsables.
@@ -80,7 +80,7 @@ const FAQTemplate = () => {
       </div>
 
       <Text className="txt-small-plus txt-ui-fg-subtle text-left">
-        © 2024 Birmin Gallery
+        © 2024 La Fuerza del Alma
       </Text>
     </main>
   )

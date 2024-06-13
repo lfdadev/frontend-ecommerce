@@ -38,19 +38,24 @@ const Subscription = () => {
   }
 
   return (
-    <div className="w-full py-6 small:py-12">
+    <div className="w-full py-6 small:py-12 px-4 small:px-10">
       <Toaster />
-      <div className="inset-0 z-10 flex flex-col justify-center items-center text-center gap-6 px-2 small:px-0">
-        <img
-          src="/images/banner-subs.svg"
-          alt="fondo"
-          className="object-cover w-full h-[350px] small:h-full z-0"
-        />
-        <form className="absolute flex flex-col gap-5 text-center items-center" onSubmit={subscribe}>
-          <h1 className="text-2xl small:text-5xl font-bold text-white max-w-lg">
-            ¿Quieres recibir las últimas novedades?
+      <div className="inset-0 z-10 flex flex-col justify-center items-center text-center gap-6">
+        <div className="w-full flex h-[450px]">
+          <img
+            src="/images/banner-newsletter.webp"
+            alt="banner suscripcion"
+            className="w-full object-center object-cover filter brightness-90"
+          />
+        </div>
+        <form
+          className="absolute flex flex-col gap-5 text-center items-center"
+          onSubmit={subscribe}
+        >
+          <h1 className="text-3xl small:text-5xl font-bold small:max-w-lg">
+            Únete a nuestra newsletter
           </h1>
-          <p className="text-sm small:text-base text-white max-w-xs small:max-w-sm italic ">
+          <p className="text-sm small:text-base max-w-xs small:max-w-sm italic ">
             Suscríbete y recibe ofertas exclusivas y novedades en tu correo
           </p>
           <div className="flex flex-col gap-1 px-10 small:px-0 text-sm small:text-base">
@@ -65,7 +70,7 @@ const Subscription = () => {
             />
             <button
               type="submit"
-              className="px-4 py-2 small:px-6 small:py-3 bg-secondary rounded-sm border border-white text-black font-bold hover:bg-terciary flex items-center justify-center transition-all "
+              className="px-4 py-2 small:px-6 small:py-3 bg-neutral-800 hover:bg-neutral-600 rounded-sm border border-white text-white font-bold flex items-center justify-center transition-all "
             >
               {isLoading ? <Spinner size={24} /> : "Únete"}
             </button>
