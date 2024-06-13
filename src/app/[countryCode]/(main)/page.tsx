@@ -10,7 +10,7 @@ import About from "@modules/home/components/about"
 import Subscription from "@modules/home/components/subscription"
 
 export const metadata: Metadata = {
-  title: "Birmin Storefront",
+  title: "La Fuerza del Alma Storefront",
   description:
     "E-commerce storefront built with Medusa, Next.js, and Tailwind CSS.",
 }
