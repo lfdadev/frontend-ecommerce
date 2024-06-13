@@ -19,7 +19,7 @@ export default function ProductRail({
   }
 
   // Filtrar los primeros 3 productos
-  const firstThreeProducts = products.slice(0, 4)
+  const firstThreeProducts = products.slice(0, 3)
 
   return (
     <div className="content-container py-12 small:py-16">
