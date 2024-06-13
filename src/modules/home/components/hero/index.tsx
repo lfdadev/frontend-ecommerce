@@ -23,7 +23,7 @@ const Hero = () => {
   return (
     <div className="h-[100vh] small:h-[75vh] w-full relative bg-ui-bg-subtle small:overflow-hidden">
       <div className="flex h-full pb-32 small:pb-0 items-end relative">
-        <div className="flex flex-col gap-4 small:gap-5 text-end w-full items-end small:items-start px-5 small:px-20 small:py-20 z-30">
+        <div className="flex flex-col gap-3 small:gap-5 text-end w-full items-end small:items-start px-5 small:px-20 py-10 small:py-20 z-30">
           <motion.div
             animate={animationOptions}
             initial={{ opacity: 0 }}
@@ -54,7 +54,7 @@ const Hero = () => {
         <img
           src="/images/heroweb.webp"
           alt="test"
-          className="absolute inset-0 filter brightness-75 z-0 h-full small:h-fit object-cover"
+          className="absolute inset-0 filter brightness-75 z-0 h-full small:h-fit object-cover w-full"
         />
       </div>
       <ContactButtom />
