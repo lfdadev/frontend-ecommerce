@@ -19,7 +19,7 @@ export default function ProductRail({
   }
 
   // Filtrar los primeros 3 productos
-  const firstThreeProducts = products.slice(0, 3)
+  const firstThreeProducts = products.slice(0, 4)
 
   return (
     <div className="content-container py-12 small:py-16">
@@ -29,7 +29,7 @@ export default function ProductRail({
           Ver más
         </InteractiveLink>
       </div>
-      <ul className="grid grid-cols-2 small:grid-cols-3 gap-x-16 gap-y-24 small:gap-y-36">
+      <ul className="grid grid-cols-2 small:grid-cols-4 gap-x-16 gap-y-24 small:gap-y-36">
         {firstThreeProducts.map((product) => (
           <li key={product.id}>
             <ProductPreview
