@@ -9,16 +9,19 @@ export default async function FeaturedProducts({
   collections: ProductCollectionWithPreviews[]
   region: Region
 }) {
-  // Ordenamos las colecciones para que la que tiene el handle "taller" vaya primero
+  // Ordenamos las colecciones para que la que tiene el título "Workshops" vaya primero, sin distinción de mayúsculas
   const sortedCollections = collections.sort((a, b) => {
-    if (a.title === "taller") return -1
-    if (b.title === "taller") return 1
-    return 0
-  })
+    const aTitle = a.title.toLowerCase();
+    const bTitle = b.title.toLowerCase();
+
+    if (aTitle === "workshops") return -1; // "Workshops" debe ir primero
+    if (bTitle === "workshops") return 1;  // Si "b" es "Workshops", debe ir después de "a"
+    return 0; // Si ninguno es "Workshops", mantenemos el orden original
+  });
 
   return sortedCollections.map((collection) => (
     <li key={collection.id}>
       <ProductRail collection={collection} region={region} />
     </li>
-  ))
+  ));
 }
