@@ -18,7 +18,6 @@ export default function ProductRail({
     return null
   }
 
-  // Filtrar los primeros 3 productos
   const firstThreeProducts = products.slice(0, 4)
 
   return (
