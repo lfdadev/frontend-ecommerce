@@ -31,7 +31,7 @@ export default async function Nav() {
                 <span className="font-normal lowercase">del</span> Alma
               </p>
 
-              <img src="/images/logo.webp" className="w-14" alt="logo" />
+              <img src="/images/logo.webp" className="w-20" alt="logo" />
             </LocalizedClientLink>
           </div>
 
