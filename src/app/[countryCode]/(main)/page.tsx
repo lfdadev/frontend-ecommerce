@@ -8,6 +8,7 @@ import { ProductCollectionWithPreviews } from "types/global"
 import { cache } from "react"
 import About from "@modules/home/components/about"
 import Subscription from "@modules/home/components/subscription"
+import Description from "@modules/home/components/description"
 
 export const metadata: Metadata = {
   title: "La Fuerza del Alma Storefront",
@@ -71,12 +72,13 @@ export default async function Home({
   return (
     <>
       <Hero />
-      <About />
+      <Description />
       <div className="py-12">
         <ul className="flex flex-col gap-x-6">
           <FeaturedProducts collections={collections} region={region} />
         </ul>
       </div>
+      <About />
       <Subscription />
     </>
   )

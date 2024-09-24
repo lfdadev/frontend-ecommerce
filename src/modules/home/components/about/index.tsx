@@ -3,7 +3,6 @@
 "use client"
 import { useInView } from "react-intersection-observer"
 import { motion } from "framer-motion"
-import AboutMar from "./about-mar"
 
 const About = () => {
   const animationOptions = {
@@ -19,10 +18,6 @@ const About = () => {
 
   return (
     <div className="mt-6 small:mt-10 w-full py-10 small:py-20 flex flex-col gap-10 small:gap-32 items-center text-justify text-gray-900 bg-white overflow-x-hidden px-5 small:px-10">
-      <div className="w-full">
-        <AboutMar />
-      </div>
-
       <div className="flex flex-col gap-4 small:gap-6 w-full">
         <div className="flex small:h-64 overflow-hidden relative items-center">
           <img
