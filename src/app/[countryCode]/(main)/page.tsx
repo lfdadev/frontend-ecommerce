@@ -10,16 +10,16 @@ import About from "@modules/home/components/about"
 import Subscription from "@modules/home/components/subscription"
 
 export const metadata: Metadata = {
-  title: "La Fuerza del Alma Storefront",
+  title: "La Fuerza del Alma Store",
   description:
-    "E-commerce storefront built with Medusa, Next.js, and Tailwind CSS.",
+    "Tienda de productos esotéricos",
 }
 
 const getCollectionsWithProducts = cache(
   async (
     countryCode: string
   ): Promise<ProductCollectionWithPreviews[] | null> => {
-    const { collections } = await getCollectionsList(0) // O especificar un número mayor si es necesario
+    const { collections } = await getCollectionsList(0) 
 
     if (!collections) {
       return null
