@@ -72,13 +72,13 @@ export default async function Home({
   return (
     <>
       <Hero />
-      <About />
+      <Description />
       <div className="py-12">
         <ul className="flex flex-col gap-x-6">
           <FeaturedProducts collections={collections} region={region} />
         </ul>
       </div>
-      <Description />
+      <About />
       <Subscription />
     </>
   )
