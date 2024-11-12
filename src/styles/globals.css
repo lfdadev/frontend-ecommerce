@@ -124,8 +124,5 @@
   .text-3xl-semi {
     @apply text-[32px] leading-[44px] font-semibold;
   }
-  .bg-pink-custom {
-  background-color: #E5A0C0; /* Color rosa claro, puedes ajustar el tono */
-}
 
 }
