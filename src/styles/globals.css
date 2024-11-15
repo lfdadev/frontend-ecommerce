@@ -127,12 +127,11 @@
   @layer utilities {
   .bg-neutral-800 {
     --tw-bg-opacity: 1;
-    background-color: rgba(229, 160, 192, var(--tw-bg-opacity)); /* Color rosa #E5A0C0 */
-    color: #FFFFFF; /* Texto en blanco para mejor contraste */
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
-    font-weight: 600;
+    background-color: rgba(229, 160, 192, var(--tw-bg-opacity)) !important; /* Color rosa #E5A0C0 */
+    color: #FFFFFF !important; /* Texto en blanco para mejor contraste */
+    font-family: 'Raleway', sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
   }
 }
-
 }
