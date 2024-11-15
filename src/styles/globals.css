@@ -142,5 +142,12 @@
     background-color: #D28AA9 !important; /* Un tono ligeramente más oscuro para el hover */
   }
 }
+  /* Ajuste del icono del carrito */
+.fa-shopping-cart {
+    font-size: 18px; /* Ajusta el tamaño según sea necesario */
+    color: #000000; /* Cambia el color si es necesario */
+    margin-right: 5px; /* Espacio entre el icono y el número de artículos, si quieres agregarlo */
+}
+
 
 }
