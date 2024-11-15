@@ -132,5 +132,19 @@
     font-size: 16px;
     font-weight: 600;
 }
+@layer components {
+  .boton-rosa {
+    background-color: #E5A0C0 !important; /* Color rosa */
+    color: #FFFFFF !important; /* Texto blanco */
+    font-weight: 600; /* Asegura que el texto sea semibold como el original */
+    padding: 0.5rem 1rem; /* Ajusta el padding si es necesario */
+    border-radius: 0.25rem; /* Borde redondeado */
+    transition: background-color 200ms ease-in-out;
+  }
+
+  .boton-rosa:hover {
+    background-color: #D28AA9 !important; /* Un tono ligeramente más oscuro de rosa para el hover */
+  }
+}
 
 }
