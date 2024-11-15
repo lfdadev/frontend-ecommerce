@@ -125,7 +125,6 @@
     @apply text-[32px] leading-[44px] font-semibold;
   }
   .bg-neutral-800 {
-    --tw-bg-opacity: 1;
-    background-color: #E5A0C0;
+    @apply background-color: #E5A0C0;
   }
 }
