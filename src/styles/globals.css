@@ -125,14 +125,11 @@
     @apply text-[32px] leading-[44px] font-semibold;
   }
   /* Cambiar color de fondo de la barra de "Envío gratis" */
-@layer utilities {
-  /* Color de fondo para la barra de "Envío gratis" */
-  .envio-gratis-bg {
-    background-color: #E5A0C0 !important; /* Color rosa especificado */
-    color: #FFFFFF !important; /* Color de texto blanco para contraste */
+.bg-neutral-800 {
+    background-color: #E5A0C0 !important; /* Rosa especificado */
+    color: #FFFFFF; /* Color de texto blanco para mejor visibilidad */
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     font-weight: 600;
-  }
 }
 }
