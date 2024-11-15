@@ -124,14 +124,13 @@
   .text-3xl-semi {
     @apply text-[32px] leading-[44px] font-semibold;
   }
-  @layer utilities {
-  .bg-neutral-800 {
-    --tw-bg-opacity: 1;
-    background-color: rgba(229, 160, 192, var(--tw-bg-opacity)) !important; /* Color rosa #E5A0C0 */
-    color: #FFFFFF !important; /* Texto en blanco para mejor contraste */
-    font-family: 'Raleway', sans-serif !important;
-    font-size: 16px !important;
-    font-weight: 600 !important;
-  }
+
+.bg-neutral-800 {
+    background-color: #E5A0C0 !important;
+    color: #FFFFFF; 
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
 }
+
 }
