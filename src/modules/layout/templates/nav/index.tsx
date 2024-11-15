@@ -57,13 +57,25 @@ export default async function Nav() {
             </div>
             <Suspense
               fallback={
-                <LocalizedClientLink
-                  className="font-semibold uppercase tracking-wide"
-                  href="/cart"
-                  data-testid="nav-cart-link"
-                >
-                  Cesta (0)
-                </LocalizedClientLink>
+               <LocalizedClientLink
+    className="font-semibold uppercase tracking-wide"
+    href="/cart"
+    data-testid="nav-cart-link"
+>
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="currentColor"
+        className="bi bi-cart"
+        viewBox="0 0 16 16"
+    >
+        <path d="M0 1.5A.5.5 0 0 1 .5 1h1a.5.5 0 0 1 .485.379L2.89 6H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 15H4a.5.5 0 0 1-.491-.408L1.01 2H.5a.5.5 0 0 1-.5-.5zm3.102 5l1.313 7h7.17l1.313-7H3.102zM5 12a2 2 0 1 0 4 0 2 2 0 0 0-4 0zm7 0a2 2 0 1 0 4 0 2 2 0 0 0-4 0z"/>
+    </svg>
+    (0)
+</LocalizedClientLink>
+
+
               }
             >
               <CartButton />
