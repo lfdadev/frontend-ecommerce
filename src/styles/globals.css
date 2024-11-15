@@ -124,12 +124,8 @@
   .text-3xl-semi {
     @apply text-[32px] leading-[44px] font-semibold;
   }
-  /* Cambiar color de fondo de la barra de "Envío gratis" */
-.bg-neutral-800 {
-    background-color: #E5A0C0 !important; /* Rosa especificado */
-    color: #FFFFFF; /* Color de texto blanco para mejor visibilidad */
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-}
+  .bg-neutral-800 {
+    --tw-bg-opacity: 1;
+    background-color: #E5A0C0;
+  }
 }
