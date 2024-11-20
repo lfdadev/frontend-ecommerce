@@ -30,35 +30,39 @@ export default async function Nav() {
             </LocalizedClientLink>
           </div>
            <div className="flex items-center gap-x-6 h-full flex-1 basis-0 justify-end">
-            <div className="hidden small:flex items-center gap-x-6 h-full">
-<LocalizedClientLink
-                className="font-semibold uppercase tracking-wide underline-text"
-                href="https://www.lafuerzadelalma.com/es/store"
-                data-testid="nav-account-link"
-              >
-                TIENDA
-              </LocalizedClientLink>
-              </div>div>
-             <div className="flex items-center gap-x-6 h-full flex-1 basis-0 justify-end">
-            <div className="hidden small:flex items-center gap-x-6 h-full">
-<LocalizedClientLink
-                className="font-semibold uppercase tracking-wide underline-text"
-                href="https://www.lafuerzadelalma.com/es/collections/taller"
-                data-testid="nav-account-link"
-              >
-                WORKSHOPS
-              </LocalizedClientLink>
-              </div>div>
-              <div className="flex items-center gap-x-6 h-full flex-1 basis-0 justify-end">
-            <div className="hidden small:flex items-center gap-x-6 h-full">
-          <LocalizedClientLink
-                className="font-semibold uppercase tracking-wide underline-text"
-                href="https://www.lafuerzadelalma.com/es/form"
-                data-testid="nav-account-link"
-              >
-                EVENTOS
-              </LocalizedClientLink>
-              </div></div>
+  <div className="hidden small:flex items-center gap-x-6 h-full">
+    <LocalizedClientLink
+      className="font-semibold uppercase tracking-wide underline-text"
+      href="https://www.lafuerzadelalma.com/es/store"
+      data-testid="nav-account-link"
+    >
+      TIENDA
+    </LocalizedClientLink>
+  </div>
+</div>
+<div className="flex items-center gap-x-6 h-full flex-1 basis-0 justify-end">
+  <div className="hidden small:flex items-center gap-x-6 h-full">
+    <LocalizedClientLink
+      className="font-semibold uppercase tracking-wide underline-text"
+      href="https://www.lafuerzadelalma.com/es/collections/taller"
+      data-testid="nav-account-link"
+    >
+      WORKSHOPS
+    </LocalizedClientLink>
+  </div>
+</div>
+<div className="flex items-center gap-x-6 h-full flex-1 basis-0 justify-end">
+  <div className="hidden small:flex items-center gap-x-6 h-full">
+    <LocalizedClientLink
+      className="font-semibold uppercase tracking-wide underline-text"
+      href="https://www.lafuerzadelalma.com/es/form"
+      data-testid="nav-account-link"
+    >
+      EVENTOS
+    </LocalizedClientLink>
+  </div>
+</div>
+
           <div className="flex items-center gap-x-6 h-full flex-1 basis-0 justify-end">
             <div className="hidden small:flex items-center gap-x-6 h-full">
               {process.env.FEATURE_SEARCH_ENABLED && (
