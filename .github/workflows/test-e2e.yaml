@@ -115,7 +115,7 @@ jobs:
 
       - name: Build the backend
         working-directory: ../backend
-        run: yarn build:admin
+        run: yarn build
 
       - name: Setup search in the backend
         working-directory: ../backend
