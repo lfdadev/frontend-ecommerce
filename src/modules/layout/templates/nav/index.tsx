@@ -29,6 +29,8 @@ export default async function Nav() {
               <img src="/images/logo.webp" className="w-20" alt="logo" />
             </LocalizedClientLink>
           </div>
+           <div className="flex items-center gap-x-6 h-full flex-1 basis-0 justify-end">
+            <div className="hidden small:flex items-center gap-x-6 h-full">
 <LocalizedClientLink
                 className="font-semibold uppercase tracking-wide underline-text"
                 href="/almacenar"
@@ -36,6 +38,9 @@ export default async function Nav() {
               >
                 Tienda
               </LocalizedClientLink>
+              </div>div>
+              <div className="flex items-center gap-x-6 h-full flex-1 basis-0 justify-end">
+            <div className="hidden small:flex items-center gap-x-6 h-full">
           <LocalizedClientLink
                 className="font-semibold uppercase tracking-wide underline-text"
                 href="/forma"
@@ -43,6 +48,7 @@ export default async function Nav() {
               >
                 Eventos
               </LocalizedClientLink>
+              </div></div>
           <div className="flex items-center gap-x-6 h-full flex-1 basis-0 justify-end">
             <div className="hidden small:flex items-center gap-x-6 h-full">
               {process.env.FEATURE_SEARCH_ENABLED && (
